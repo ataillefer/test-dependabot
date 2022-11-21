@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.ataillefer.test</groupId>
+  <artifactId>test-dependabot</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>Test Dependabot</name>
+
+  <dependencyManagement>
+    <dependencies>
+
+      <!-- Security update needed, major, not ignored => PR expected, no auto-merge -->
+      <dependency>
+        <groupId>org.apache.poi</groupId>
+        <artifactId>poi-scratchpad</artifactId>
+        <version>4.1.12</version>
+      </dependency>
+
+      <!-- Security update needed, major, ignored => no PR expected -->
+      <dependency>
+        <groupId>org.jboss.remoting</groupId>
+        <artifactId>jboss-remoting</artifactId>
+        <version>2.5.1</version>
+      </dependency>
+      <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-core</artifactId>
+        <version>3.3.2.GA</version>
+      </dependency>
+      <dependency>
+        <groupId>com.h2database</groupId>
+        <artifactId>h2</artifactId>
+        <version>1.4.200</version>
+      </dependency>
+
+      <!-- Security update needed, minor, not ignored => PR expected, auto-merge -->
+      <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-databind</artifactId>
+        <version>2.12.7</version>
+      </dependency>
+
+      <!-- Security update needed, minor, ignored => no PR expected -->
+      <dependency>
+        <groupId>org.elasticsearch</groupId>
+        <artifactId>elasticsearch</artifactId>
+        <version>7.9.2</version>
+      </dependency>
+
+      <!-- Version update, major, ignored => no PR expected -->
+      <dependency>
+        <groupId>org.apache.kafka</groupId>
+        <artifactId>kafka-clients</artifactId>
+        <version>2.6.0</version>
+      </dependency>
+
+      <!-- Version update, minor, not ignored => PR expected, auto-merge -->
+     <dependency>
+        <groupId>com.auth0</groupId>
+        <artifactId>java-jwt</artifactId>
+        <version>3.11.0</version>
+      </dependency>
+
+      <!-- Version update, minor, ignored => no PR expected -->
+      <dependency>
+        <groupId>com.amazonaws</groupId>
+        <artifactId>aws-java-sdk-core</artifactId>
+        <version>1.12.261</version>
+      </dependency>
+
+    </dependencies>
+  </dependencyManagement>
+
+</project>
+      
