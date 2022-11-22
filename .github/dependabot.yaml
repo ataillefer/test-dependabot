@@ -9,7 +9,7 @@ updates:
     ignore:
       # No major version updates (doesn't work for security updates, need to list them explicitly, see below)
       - dependency-name: "*"
-        update-types: ["version-update:semver-major", "version-update:semver-minor", "version-update:semver-patch"]
+        update-types: ["version-update:semver-major"]
 
       # No major security updates
       - dependency-name: "org.jboss.remoting:jboss-remoting"
