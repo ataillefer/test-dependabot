@@ -55,6 +55,13 @@
         <version>2.8.2</version>
       </dependency>
 
+      <!-- Version update, major but not semver, ignored => no PR expected -->
+      <dependency>
+        <groupId>org.jboss.el</groupId>
+        <artifactId>jboss-el</artifactId>
+        <version>1.0_02.CR6</version>
+      </dependency>
+
       <!-- Version update, minor, not ignored => PR expected, auto-merge -->
      <dependency>
         <groupId>com.auth0</groupId>
