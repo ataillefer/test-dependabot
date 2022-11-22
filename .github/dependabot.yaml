@@ -19,15 +19,15 @@ updates:
       - dependency-name: "com.h2database:h2"
         versions: ["[2.0,)"]
 
-      # # No minor security updates for Elasticsearch
-      # - dependency-name: "org.elasticsearch*:*"
-      #   versions: ["[7.9.3,)"]
+      # No minor security updates for Elasticsearch
+      - dependency-name: "org.elasticsearch*:*"
+        versions: [">7.9.2"]
 
-      # # No Chronicle Queue update
-      # - dependency-name: "net.openhft:chronicle-bom"
-      #   versions: [">=2.20.40"]
-      # - dependency-name: "net.openhft:chronicle-threads"
-      #   versions: [">=2.17.25"]
+      # No Chronicle Queue update
+      - dependency-name: "net.openhft:chronicle-bom"
+        versions: [">2.20.40"]
+      - dependency-name: "net.openhft:chronicle-threads"
+        versions: [">2.17.25"]
 
       # Versions that are upgraded too often to be useful to track with Dependabot
       - dependency-name: "com.amazonaws:aws-java-sdk-*"
