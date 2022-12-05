@@ -89,3 +89,23 @@ updates:
       interval: "daily"
     ignore:
       - dependency-name: "*"
+
+  # Ignore npm dependencies
+  - package-ecosystem: "npm"
+    directory: "/nuxeo-dm/nuxeo-platform-webapp"
+    schedule:
+      interval: "daily"
+    ignore:
+      - dependency-name: "*"
+  - package-ecosystem: "npm"
+    directory: "/nuxeo-features/nuxeo-admin-center/nuxeo-admin-center-analytics"
+    schedule:
+      interval: "daily"
+    ignore:
+      - dependency-name: "*"
+  - package-ecosystem: "npm"
+    directory: "/nuxeo-features/preview/nuxeo-preview-core"
+    schedule:
+      interval: "daily"
+    ignore:
+      - dependency-name: "*"
